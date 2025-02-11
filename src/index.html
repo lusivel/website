@@ -1,13 +1,53 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red-600">
-    Hello world!
-  </h1>
+<body class="bg-neutral-50">
+  <header>
+<!-- Navbar -->
+    <nav class="bg-white p-4 shadow-md">
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+              <span class="text-xl font-bold">SHOP.CO</span>
+          </a>
+
+          <!-- Links -->
+          <div class="hidden md:flex space-x-6">
+              <a href="#" class="text-gray-800 hover:text-blue-500">Shop</a>
+              <a href="#on-sale" class="text-gray-800 hover:text-blue-500">On sale</a>
+              <a href="#new-arrivals" class="text-gray-800 hover:text-blue-500">New Arrivals</a>
+              <a href="#brand" class="text-gray-800 hover:text-blue-500">Brand</a>
+          </div>
+
+          <!-- Search and Cart -->
+          <div class="flex items-center space-x-4">
+              <!-- Search Bar -->
+              <input type="search" placeholder="Search..." class="p-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 w-80">
+
+              <!-- Icon -->
+              <button class="relative text-gray-800">
+                  <img src="./img/Cart-Outline.png" alt="cart">
+              <button class="relative text-gray-800">
+                <img src="./img/User-Outline.png" alt="">
+              </button>
+              </button>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="m-24">
+    <p class="text-6xl font-bold">FIND CLOTHES<br>
+    THAT MATCHES<br>
+    YOUR STYLE</p>
+    <P class="mt-4 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Dignissimos eligendi libero vero quisquam.</P>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-3xs">
+      SHOP NOW
+    </button>
+  </section>
 </body>
 </html>
